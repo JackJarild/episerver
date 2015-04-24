@@ -12,14 +12,37 @@
         <div class="col-xs-12">
             <div class="jumbotron">
                 <div class="text-center">
-                    <h1>
+                    <h2 class="brand-before">
+                        <small>Welcome to</small>
+                    </h2>
+                    <h2 class="brand-name">
                         <EPiServer:Property ID="Property1" runat="server" PropertyName="Headline"></EPiServer:Property>                        
-                    </h1>
+                    </h2>
+                    <hr class="tagline-divider" />
+                    <h2>
+                        <small>By
+                            <strong>Jack Järild</strong>
+                        </small>
+                    </h2>
                 </div>
-                <EPiServer:Property runat="server" PropertyName="MainContent"></EPiServer:Property>
             </div>
         </div>
     </div>
+
+      <div class="row">
+          <div class="col-xs-12">
+              <div class="jumbotron">
+                  <hr />
+                  <h2 class="intro-text text-center">
+                        <EPiServer:Property runat="server" PropertyName="SecondHeadline">
+                        </EPiServer:Property>
+                  </h2> 
+                  <hr />
+                  <EPiServer:Property runat="server" PropertyName="MainContent"></EPiServer:Property>
+
+              </div>
+          </div>
+      </div>
 
     <div class="row">
         <div class="col-xs-4">
