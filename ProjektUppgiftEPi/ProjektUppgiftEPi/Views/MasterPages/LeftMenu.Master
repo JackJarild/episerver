@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/MasterPages/Site.Master" AutoEventWireup="true" CodeBehind="LeftMenu.master.cs" Inherits="ProjektUppgiftEPi.Views.MasterPages.LeftMenu" %>
+<%@ Import Namespace="EPiServer.Core" %>
+<%@ Import Namespace="EPiServer.Web.Routing" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-2">
+        <EPiServer:PageList runat="server" PageLink="<%#CurrentPage.ParentLink %>">                      
+          <ItemTemplate>
+            <div>
+                <a href="<%#UrlResolver.Current.GetUrl((ContentReference)Eval("PageLink")) %>" <%#GetLinkCss((ContentReference)Eval("PageLink")) %>><%#Eval("PageName") %></a>
+                
+            </div>
+          </ItemTemplate>            
+        </EPiServer:PageList>
+      </div>
+      <div class="col-xs-5">
+        <asp:ContentPlaceHolder runat="server" ID="main">
+        </asp:ContentPlaceHolder>
+      </div>
+      <div class="col-xs-5">
+        <asp:ContentPlaceHolder runat="server" ID="right">
+        </asp:ContentPlaceHolder>
+      </div>
+    </div>
+  </div>
+</asp:Content>
+
+<script language="c#" runat="server">
+    protected string GetLinkCss(ContentReference contentReference)
+    {
+        if (contentReference.CompareToIgnoreWorkID(CurrentPage.PageLink))
+        {
+            return "class=\"text-primary\"";
+        }
+
+        return string.Empty;
+    }
+</script>
