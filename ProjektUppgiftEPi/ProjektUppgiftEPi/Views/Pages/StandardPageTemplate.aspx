@@ -62,7 +62,7 @@
                 <div class="row">
                     <EPiServer:Property runat="server" PropertyName="RightContent">
                         <RenderSettings Tag="Teaser"></RenderSettings>
-                    </EPiServer:Property>dsfs
+                    </EPiServer:Property>
                 </div>
             </div>
         </div>
