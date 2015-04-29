@@ -7,10 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjektUppgiftEPi.Views.Pages
-{
-    public partial class StandardPageTemplate
-    {
-
+namespace ProjektUppgiftEPi.Views.Pages {
+    
+    
+    public partial class StandardPageTemplate {
     }
 }

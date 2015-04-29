@@ -12,6 +12,13 @@ namespace ProjektUppgiftEPi.Models.Pages
     {
         public virtual ContentArea BlockContents { get; set; }
 
+        public virtual ContentArea LeftContent { get; set; }
+
+        public virtual ContentArea CenterContent { get; set; }
+
         public virtual ContentArea RightContent { get; set; }
+        
+        [UIHint("Image2")]
+        public virtual ContentReference Image { get; set; }
     }
 }
