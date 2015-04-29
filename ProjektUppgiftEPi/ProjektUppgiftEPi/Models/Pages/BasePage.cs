@@ -32,11 +32,6 @@ namespace ProjektUppgiftEPi.Models.Pages
         [CultureSpecific]
         public virtual string Headline { get; set; }
 
-
-        [Display(Description = "The text visible at the top of the page", Name = "Second Headline", Order = 7, GroupName = SystemTabNames.Content)]
-        [CultureSpecific]
-        public virtual XhtmlString SecondHeadline { get; set; } 
-
         [Display(Description = "The main content text", Name = "Main content", Order = 4, GroupName = SystemTabNames.Content)]
         [CultureSpecific]
         public virtual XhtmlString MainContent { get; set; }
@@ -48,5 +43,19 @@ namespace ProjektUppgiftEPi.Models.Pages
         [UIHint(UIHint.Image)]
         [Display(Description = "Teaser image", Name = "Teaser image", Order = 6, GroupName = "Teaser")]
         public virtual ContentReference TeaserImage { get; set; }
+
+        [Display(Description = "The text visible at the top of the page", Name = "Second Headline", Order = 7, GroupName = SystemTabNames.Content)]
+        [CultureSpecific]
+        public virtual XhtmlString SecondHeadline { get; set; }
+
+        [Display(Description = "The text visible at the top of the page", Name = "Main Headline", Order = 8, GroupName = SystemTabNames.Content)]
+        [CultureSpecific]
+        public virtual XhtmlString MainHeadline { get; set; } 
+
+        public virtual ContentArea LeftContent { get; set; }
+
+        public virtual ContentArea CenterContent { get; set; }
+
+        public virtual ContentArea RightContent { get; set; }
     }
 }

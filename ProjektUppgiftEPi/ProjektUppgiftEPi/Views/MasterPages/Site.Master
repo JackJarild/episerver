@@ -37,84 +37,91 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <asp:ContentPlaceHolder ID="head" runat="server">
-  </asp:ContentPlaceHolder>
+    </asp:ContentPlaceHolder>
 </head>
 
 <body>
     <form id="form1" runat="server">
-    <div class="brand">Business Casual</div>
-    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Business Casual</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <uc1:TopMenu runat="server" id="TopMenu" />
-            </div>
-            <!-- /.navbar-collapse -->
+        <div class="brand">
+            <EPiServer:Property ID="Property1" runat="server" PropertyName="MainHeadline"></EPiServer:Property>
         </div>
-    </nav>
 
-    <div class="container">
+        <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+        
 
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <asp:ContentPlaceHolder runat="server" ID="main">
-                    </asp:ContentPlaceHolder>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                    <a class="navbar-brand" href="index.html">Business Casual</a>
                 </div>
-                <div class="col-lg-4">
-                    <asp:ContentPlaceHolder runat="server" ID="left">
-                    </asp:ContentPlaceHolder>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <uc1:TopMenu runat="server" ID="TopMenu" />
                 </div>
-                <div class="col-lg-4">
-                    <asp:ContentPlaceHolder runat="server" ID="center">
-                    </asp:ContentPlaceHolder>
-                </div>
-                <div class="col-lg-4">
-                    <asp:ContentPlaceHolder runat="server" ID="right">
-                    </asp:ContentPlaceHolder>
-                </div>
+                <!-- /.navbar-collapse -->
             </div>
-        </div>
-    </div>
-    <!-- /.container -->
+        </nav>
 
-    <footer>
         <div class="container">
+
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+                <div class="box">
+                    <div class="col-lg-12">
+                        <asp:ContentPlaceHolder runat="server" ID="main">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="row">
+                        <div class="">
+                            <asp:ContentPlaceHolder runat="server" ID="left">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="">
+                            <asp:ContentPlaceHolder runat="server" ID="center">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="">
+                            <asp:ContentPlaceHolder runat="server" ID="right">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div> <!-- /row -->
                 </div>
             </div>
         </div>
-    </footer>
+        <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="/Static/js/jquery.js"></script>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p>Copyright &copy; Your Website 2014</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/Static/js/bootstrap.min.js"></script>
+        <!-- jQuery -->
+        <script src="/Static/js/jquery.js"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
+        <!-- Bootstrap Core JavaScript -->
+        <script src="/Static/js/bootstrap.min.js"></script>
+
+        <!-- Script to Activate the Carousel -->
+        <script>
+            $('.carousel').carousel({
+                interval: 5000 //changes the speed
+            })
     </script>
-  </form>
+    </form>
 </body>
 
 </html>
