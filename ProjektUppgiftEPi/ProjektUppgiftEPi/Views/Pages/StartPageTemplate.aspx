@@ -15,6 +15,7 @@
                     <h2 class="brand-before">
                         <small><EPiServer:Property ID="Property2" runat="server" PropertyName="FirstSmallHeadline"></EPiServer:Property></small>
                     </h2>
+                    <hr class="tagline-divider" />
                     <h2 class="brand-name">
                         <EPiServer:Property ID="Property1" runat="server" PropertyName="Headline"></EPiServer:Property>                        
                     </h2>

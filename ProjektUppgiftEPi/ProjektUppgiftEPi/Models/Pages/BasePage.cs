@@ -32,6 +32,14 @@ namespace ProjektUppgiftEPi.Models.Pages
         [CultureSpecific]
         public virtual string Headline { get; set; }
 
+        [Display(Description = "The text visible at the top of the page", Name = "Headline", Order = 3, GroupName = SystemTabNames.Content)]
+        [CultureSpecific]
+        public virtual string MainHeadline { get; set; }
+
+        [Display(Description = "The text visible at the top of the page", Name = "Headline", Order = 3, GroupName = SystemTabNames.Content)]
+        [CultureSpecific]
+        public virtual string SecondMainHeadline { get; set; }
+
 
         [Display(Description = "The text visible at the top of the page", Name = "Second Headline", Order = 7, GroupName = SystemTabNames.Content)]
         [CultureSpecific]

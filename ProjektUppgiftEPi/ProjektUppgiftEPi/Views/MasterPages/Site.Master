@@ -42,8 +42,12 @@
 
 <body>
     <form id="form1" runat="server">
-    <div class="brand">Business Casual</div>
-    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+    <div class="brand">
+        <EPiServer:Property ID="Property1" runat="server" PropertyName="MainHeadline"></EPiServer:Property>
+    </div>
+    <div class="address-bar">
+        <EPiServer:Property ID="Property2" runat="server" PropertyName="SecondMainHeadline"></EPiServer:Property>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
