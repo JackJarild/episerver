@@ -13,15 +13,15 @@
             <div class="jumbotron">
                 <div class="text-center">
                     <h2 class="brand-before">
-                        <small>Welcome to</small>
+                        <small><EPiServer:Property ID="Property2" runat="server" PropertyName="FirstSmallHeadline"></EPiServer:Property></small>
                     </h2>
                     <h2 class="brand-name">
                         <EPiServer:Property ID="Property1" runat="server" PropertyName="Headline"></EPiServer:Property>                        
                     </h2>
                     <hr class="tagline-divider" />
                     <h2>
-                        <small>By
-                            <strong>Jack Järild</strong>
+                        <small>
+                            <EPiServer:Property ID="Property3" runat="server" PropertyName="SecondSmallHeadline"></EPiServer:Property>
                         </small>
                     </h2>
                 </div>

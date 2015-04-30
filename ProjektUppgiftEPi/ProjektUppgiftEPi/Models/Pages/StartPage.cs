@@ -13,5 +13,13 @@ namespace ProjektUppgiftEPi.Models.Pages
     {
         [UIHint("Image2")]
         public virtual ContentReference Image { get; set; }
+
+        [Display(Description = "The text visible at the top of the page", Name = "First small headline", Order = 7)]
+        [CultureSpecific]
+        public virtual XhtmlString FirstSmallHeadline { get; set; }
+
+        [Display(Description = "The text visible at the top of the page", Name = "Second small headline", Order = 7)]
+        [CultureSpecific]
+        public virtual XhtmlString SecondSmallHeadline { get; set; } 
     }
 }

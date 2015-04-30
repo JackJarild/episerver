@@ -13,6 +13,15 @@ namespace ProjektUppgiftEPi.Views.Pages {
     public partial class StartPageTemplate {
         
         /// <summary>
+        /// Property2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::EPiServer.Web.WebControls.Property Property2;
+        
+        /// <summary>
         /// Property1 control.
         /// </summary>
         /// <remarks>
@@ -20,5 +29,14 @@ namespace ProjektUppgiftEPi.Views.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::EPiServer.Web.WebControls.Property Property1;
+        
+        /// <summary>
+        /// Property3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::EPiServer.Web.WebControls.Property Property3;
     }
 }
