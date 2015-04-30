@@ -21,8 +21,8 @@
                     </h2>
                     <hr class="tagline-divider" />
                     <h2>
-                        <small>
-                            <EPiServer:Property ID="Property3" runat="server" PropertyName="SecondSmallHeadline"></EPiServer:Property>
+                        <small>By
+                            <strong>Jack Järild</strong>
                         </small>
                     </h2>
                 </div>
@@ -44,41 +44,56 @@
               </div>
           </div>
       </div>
+</asp:Content>
 
-    <div class="row">
+<asp:Content runat="server" ContentPlaceHolderID="left">
         <div class="col-xs-4">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12">
-                        <img src="http://s3-eu-west-1.amazonaws.com/petrus-blog/placeholder.png" class="img-responsive" />
+                    <%--<img src="http://s3-eu-west-1.amazonaws.com/petrus-blog/placeholder.png" class="img-responsive" />
                         <h2>Rubrik</h2>
-                        <div>Min text</div>
+                        <div>Min text</div>--%>
 
+                    <EPiServer:Property runat="server" PropertyName="LeftContent">
+                        <RenderSettings Tag="Teaser"></RenderSettings>
+                    </EPiServer:Property>
                     </div>
                 </div>
             </div>
         </div>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="center">
         <div class="col-xs-4">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12">
-                        <img src="http://s3-eu-west-1.amazonaws.com/petrus-blog/placeholder.png" class="img-responsive" />
+                    <%--<img src="http://s3-eu-west-1.amazonaws.com/petrus-blog/placeholder.png" class="img-responsive" />
                         <h2>Rubrik</h2>
-                        <div>Min text</div>
+                    <div>Min text</div>--%>
 
+                    <EPiServer:Property runat="server" PropertyName="CenterContent">
+                        <RenderSettings Tag="Teaser"></RenderSettings>
+                    </EPiServer:Property>
                     </div>
                 </div>
             </div>
         </div>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="right">
         <div class="col-xs-4">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12">
-                        <img src="http://s3-eu-west-1.amazonaws.com/petrus-blog/placeholder.png" class="img-responsive" />
+                    <%--<img src="http://s3-eu-west-1.amazonaws.com/petrus-blog/placeholder.png" class="img-responsive" />
                         <h2>Rubrik</h2>
-                        <div>Min text</div>
+                    <div>Min text</div>--%>
 
-                    </div>
+                    <EPiServer:Property runat="server" PropertyName="RightContent">
+                        <RenderSettings Tag="Teaser"></RenderSettings>
+                    </EPiServer:Property>
                 </div>
             </div>
         </div>
